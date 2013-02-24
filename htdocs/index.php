@@ -3,7 +3,7 @@ require_once('phplib/Dashboard.php');
 
 $sections = array(
     'Application' => array(
-        'Deploy' => Dashboard::$DEPLOY_TABS,
+        'Deploy' => Dashboard::$APP_TABS,
     ),
     'Operations' => array(
         'Database' => Dashboard::$DB_TABS,
@@ -11,7 +11,7 @@ $sections = array(
         'Chef' => array(
             'chef' => '/example_chef.php',
         ),
-        'Hadoop' => Dashboard::$HADOOP_TABS,
+        //'Hadoop' => Dashboard::$HADOOP_TABS,
         'Util' => Dashboard::$TIME_TABS,
     ),
 );

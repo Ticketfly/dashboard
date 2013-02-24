@@ -24,9 +24,9 @@ require_once('TimingUtils.php');
  * won't hurt it :-)
  */
 
-$cacti_server = "cacti.example.com";
+$cacti_server = "cacti.ticketfly.com";
 $chef_server = "chef.example.com";
-$fitb_server = "fitb.example.com";
+$fitb_server = "205.234.15.34/FITB/";
 $ganglia_server = "ganglia.example.com";
 $ganglia_server_dev = "ganglia.dev.example.com";
 $graphite_server = "graphite.example.com";
@@ -61,21 +61,21 @@ class Dashboard {
         'PostgreSQL Queries' => '/example_postgresql_queries.php',
     );
 
-    public static $DEPLOY_TABS = array(
-        'FITB' => '/example_fitb.php',
-        'New Relic' => '/example_newrelic.php',
+    public static $APP_TABS = array(
+        'New Relic - Prod' => '/newrelic/prod.php',
     );
-
-    public static $HADOOP_TABS = array(
-        'Overview' => '/example_hadoop/overview.php',
-        'DFS' => '/example_hadoop/dfs.php',
-        'Jobs' => '/example_hadoop/jobs.php',
-        'Java Process Metrics' => '/example_hadoop/java_process.php',
-        'HBase' => '/example_hadoop/hbase.php',
-    );
+    /*
+    *public static $HADOOP_TABS = array(
+    *    'Overview' => '/example_hadoop/overview.php',
+    *    'DFS' => '/example_hadoop/dfs.php',
+    *    'Jobs' => '/example_hadoop/jobs.php',
+    *    'Java Process Metrics' => '/example_hadoop/java_process.php',
+    *    'HBase' => '/example_hadoop/hbase.php',
+    *);
+    */
 
     public static $NETWORK_TABS = array(
-        'FITB' => '/example_fitb.php',
+        'FITB' => 'FITB/prod.php',
         'Netstat' => '/example_netstat.php',
         'Mem info' => '/example_meminfo.php',
     );
@@ -97,6 +97,7 @@ class Dashboard {
      */
     public static function getTimes() {
         return array(
+            '30m' => '30 minutes',
             '1h' => '1 hour',
             '2h' => '2 hours',
             '4h' => '4 hours',
@@ -105,8 +106,8 @@ class Dashboard {
             '2d' => '2 days',
             '3d' => '3 days',
             '1w' => '1 week',
-            '1m' => '1 month',
-            '2m' => '2 months',
+            '1M' => '1 month',
+            '2M' => '2 months',
         );
     }
 
@@ -116,10 +117,11 @@ class Dashboard {
      */
     public static function displayTime($time) {
         $units = array(
+            'm' => 'minute',
             'h' => 'hour',
             'd' => 'day',
             'w' => 'week',
-            'm' => 'month',
+            'M' => 'month',
             'y' => 'year',
         );
 
@@ -147,6 +149,9 @@ class Dashboard {
         $unit_seconds = 0;
 
         switch ($u) {
+            case 'm':
+                $unit_seconds = 1800;
+                break;
             case 'h':
                 $unit_seconds = 3600;
                 break;
@@ -156,7 +161,7 @@ class Dashboard {
             case 'w':
                 $unit_seconds = 86400 * 7;
                 break;
-            case 'm':
+            case 'M':
                 $unit_seconds = 86400 * 30;
                 break;
             case 'y':

@@ -3,12 +3,12 @@
 // the title used for the page
 $title = 'Cacti Example';
 
-require_once 'phplib/Dashboard.php';
+require_once '../phplib/Dashboard.php';
 
 $cacti_graphs = array(
     'system01-cpu' => array(
             'type' => 'cacti',
-            'metric' => 5776,
+            'metric' => 826,
             'width' => 603,
             'height' => 269,
     ),
@@ -69,4 +69,4 @@ $graphs = array(
     'Network Activity' => $network_graphs,
 );
 
-include 'phplib/template.php';
+include '../phplib/template.php';
