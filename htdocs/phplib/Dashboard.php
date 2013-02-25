@@ -57,8 +57,11 @@ class Dashboard {
      */
 
     public static $DB_TABS = array(
-        'PGBouncer' => '/example_pgbouncer.php',
+        /** 'PGBouncer' => '/example_pgbouncer.php',
         'PostgreSQL Queries' => '/example_postgresql_queries.php',
+	*/
+        'FusionIO DB servers' => 'cacti/db_stats.php',
+	
     );
 
     public static $APP_TABS = array(
