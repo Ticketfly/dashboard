@@ -222,6 +222,8 @@ class Graph_Graphite {
             $p['fgcolor'] = $this->fg_color;
         }
 
+        $p['template'] = "plain";
+
         $targets = array();
         $colors = array();
 

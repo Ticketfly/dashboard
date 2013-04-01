@@ -8,6 +8,10 @@ $sections = array(
     'Operations' => array(
         'Database' => Dashboard::$DB_TABS,
         'Network' => Dashboard::$NETWORK_TABS,
+        'Apache' => array(
+            'Pur Apache' => 'apache/pur.php',
+            'Inv Apache' => 'apache/inv.php',
+        ),
         'Chef' => array(
             'chef' => '/example_chef.php',
         ),
