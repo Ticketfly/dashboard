@@ -11,6 +11,8 @@ $sections = array(
         'Apache' => array(
             'Pur Apache' => 'apache/pur.php',
             'Inv Apache' => 'apache/inv.php',
+            'BKS Apache' => 'apache/bks.php',
+            'BKL Apache' => 'apache/bkl.php',
         ),
         'Chef' => array(
             'chef' => '/example_chef.php',
