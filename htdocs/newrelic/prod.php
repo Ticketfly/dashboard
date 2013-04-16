@@ -52,6 +52,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/eqDoihgOy59'),
         ),
+        //BKJ
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/eqmQFKbU8Rd'),
+        ),
         //INV
         array(
             'type' => 'newrelic',
@@ -111,88 +116,6 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/i7E9oNXUWj6'),
-        ),
-    ),
-    'Prod response time and throughput' => array(
-	//USR
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/5MI8Qdjv8Ct'),
-        ),
-	//PUR
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/aFkJgmhzMNp'),
-        ),
-	//BKS
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/afwKhwRitue'),
-        ),
-	//BKL
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/1gFAJvwWsI8'),
-        ),
-	//INV
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/1pkYgenuS2A'),
-        ),
-	//API
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/9LLv5EEs7By'),
-        ),
-	//LNG
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/f6P8ShcfjRo'),
-        ),
-	//WPMU
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/8hYBIGEl2PC'),
-        ),
-	//USR
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/lDoBa4CTLch'),
-        ),
-	//PUR
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/jghsqytUqcU'),
-        ),
-	//BKS
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/fNJvv93KFJh'),
-        ),
-	//BKL
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/lAZKWxCz72L'),
-        ),
-	//INV
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/8R3OlwXyW4m'),
-        ),
-	//API
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/ag2fNLgKMLb'),
-        ),
-	//LNG
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/5tY1pyGSAqJ'),
-        ),
-	//WPMU
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/aRhO6TkZgQd'),
         ),
     ),
 );
