@@ -97,6 +97,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/8gSNDM2YwJo'),
         ),
+        //BKJ
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/cTINam6HBN3'),
+        ),
         //INV
         array(
             'type' => 'newrelic',
