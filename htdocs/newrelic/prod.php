@@ -130,7 +130,7 @@ $graphs = array(
         //PLE
         array(
             'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/eDETfYFdalM'),
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/eDETfYFdalM'),
         ),                
     ),
 );
