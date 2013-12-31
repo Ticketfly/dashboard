@@ -77,6 +77,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/jP7A7ovTtdb'),
         ),
+        //PLE
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/bYUJB2T0Yom'),
+        ),        
         //USR
         array(
             'type' => 'newrelic',
@@ -122,6 +127,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/i7E9oNXUWj6'),
         ),
+        //PLE
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/eDETfYFdalM'),
+        ),                
     ),
 );
 
