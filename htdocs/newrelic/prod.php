@@ -47,6 +47,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/6zoZozONyY8'),
         ),
+        //BKR
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/3x76YrGanja'),
+        ),        
         //BKL
         array(
             'type' => 'newrelic',
@@ -82,6 +87,16 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/bYUJB2T0Yom'),
         ),        
+        //DVA
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7ir1XZIb5RN'),
+        ),                
+        //Elastic Search
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/jHjWgzNHXe3'),
+        ),                        
         //USR
         array(
             'type' => 'newrelic',
@@ -97,6 +112,11 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/kEukcS7V6Sw'),
         ),
+        //BKR
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/5uh9FB63sJP'),
+        ),        
         //BKL
         array(
             'type' => 'newrelic',
@@ -132,6 +152,16 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/eDETfYFdalM'),
         ),                
+        //DVA
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/clEqNZzO8Rs'),
+        ),                        
+        //Elastic Search
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/1UAHpLprb7J'),
+        ),                                
     ),
 );
 
