@@ -91,7 +91,12 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7ir1XZIb5RN'),
-        ),                
+        ),                        
+        //VIP
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/365P6r8diz'),
+        ),                        
         //Elastic Search
         array(
             'type' => 'newrelic',
@@ -156,7 +161,12 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/clEqNZzO8Rs'),
-        ),                        
+        ),           
+        //VIP
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/3vd1N7rknQo'),
+        ),                   
         //Elastic Search
         array(
             'type' => 'newrelic',
