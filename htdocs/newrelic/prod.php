@@ -61,17 +61,17 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7ir1XZIb5RN'),
+        ),
+        //DVA Graphite
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'http://graphite.ticketfly.com/render/?width=460&height=200&_salt=1397146386.758&from=-30minutes&lineWidth=2&title=Diva%20Total%20Api%20Requests%20Per%20Minute&target=color(color(alias(movingAverage(sum(dva*.sc.tfly-internal.com.api-req.*.millis.count)%2C4)%2C%22api-per-min%22)%2C%22red%22)%2C%22blue%22)&bgcolor=white&fgcolor=black&fontSize=12&tz=America/Los_Angeles'),
         ),                        
         //Elastic Search
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/jHjWgzNHXe3'),
         ),                        
-        //INV
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/av1RmDwmV1R'),
-        ),
         //LNG
         array(
             'type' => 'newrelic',
@@ -86,6 +86,11 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/dElfxwqR1BT'),
+        ),
+        //SAL
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/av1RmDwmV1R'),
         ),
         //USR
         array(
@@ -132,16 +137,16 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/clEqNZzO8Rs'),
         ),           
+        //DVA Graphite
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'http://graphite.ticketfly.com/render/?width=460&height=200&_salt=1397146386.758&from=-60minutes&lineWidth=2&title=Diva%20Total%20Api%20Requests%20Per%20Minute&target=color(color(alias(movingAverage(sum(dva*.sc.tfly-internal.com.api-req.*.millis.count)%2C4)%2C%22api-per-min%22)%2C%22red%22)%2C%22blue%22)&bgcolor=white&fgcolor=black&fontSize=12&tz=America/Los_Angeles'),
+        ),                        
         //Elastic Search
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/1UAHpLprb7J'),
         ),                                
-        //INV
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/S8YPCwQMMt'),
-        ),
         //LNG
         array(
             'type' => 'newrelic',
@@ -156,6 +161,11 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/lIimBYFFA7s'),
+        ),
+        //SAL
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/S8YPCwQMMt'),
         ),
         //USR
         array(

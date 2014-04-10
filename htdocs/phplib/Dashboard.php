@@ -102,6 +102,7 @@ class Dashboard {
         return array(
             '30m' => '30 minutes',
             '1h' => '1 hour',
+ /*
             '2h' => '2 hours',
             '4h' => '4 hours',
             '12h' => '12 hours',
@@ -111,7 +112,8 @@ class Dashboard {
             '1w' => '1 week',
             '1M' => '1 month',
             '2M' => '2 months',
-        );
+*/ 
+       );
     }
 
     /**
