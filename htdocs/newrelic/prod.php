@@ -32,6 +32,19 @@ require_once '../phplib/Dashboard.php';
 
 $graphs = array(
     'Prod Page Performance Average Response time by tier (ms)' => array(
+        //DVA
+        array(
+            'type' => 'graphite',
+            'title' => 'Diva Total Api Requests Per Minute',
+            'metrics' => array("movingAverage(sum(dva*.sc.tfly-internal.com.api-req.*.millis.count),4))"),
+        ),
+        //DVA
+        array(
+            'type' => 'graphite',
+            'title' => 'Diva Requests Successes Vs. Failures Per Minute',
+            'metrics' => array("movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.success-attempt-*.count),4)",
+                                 "movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.failed-retry-*.count),4)"),
+        ),
         //API
         array(
             'type' => 'newrelic',
@@ -62,11 +75,6 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7ir1XZIb5RN'),
         ),
-        //DVA Graphite
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'http://graphite.ticketfly.com/render/?width=460&height=200&_salt=1397146386.758&from=-30minutes&lineWidth=2&title=Diva%20Total%20Api%20Requests%20Per%20Minute&target=color(color(alias(movingAverage(sum(dva*.sc.tfly-internal.com.api-req.*.millis.count)%2C4)%2C%22api-per-min%22)%2C%22red%22)%2C%22blue%22)&bgcolor=white&fgcolor=black&fontSize=12&tz=America/Los_Angeles'),
-        ),                        
         //Elastic Search
         array(
             'type' => 'newrelic',
@@ -137,11 +145,6 @@ $graphs = array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/clEqNZzO8Rs'),
         ),           
-        //DVA Graphite
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'http://graphite.ticketfly.com/render/?width=460&height=200&_salt=1397146386.758&from=-60minutes&lineWidth=2&title=Diva%20Total%20Api%20Requests%20Per%20Minute&target=color(color(alias(movingAverage(sum(dva*.sc.tfly-internal.com.api-req.*.millis.count)%2C4)%2C%22api-per-min%22)%2C%22red%22)%2C%22blue%22)&bgcolor=white&fgcolor=black&fontSize=12&tz=America/Los_Angeles'),
-        ),                        
         //Elastic Search
         array(
             'type' => 'newrelic',
