@@ -42,8 +42,8 @@ $graphs = array(
         array(
             'type' => 'graphite',
             'title' => 'Diva Requests Successes Vs. Failures Per Minute',
-            'metrics' => array("movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.success-attempt-*.count),4)",
-                                 "movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.failed-retry-*.count),4)"),
+            'metrics' => array("movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.failed-retry-*.count),4)",
+                               "movingAverage(sum(dva0*.sc.tfly-internal.com.find-best-seat.success-attempt-*.count),4)"),
         ),
         //API
         array(
