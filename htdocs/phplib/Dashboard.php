@@ -29,7 +29,7 @@ $chef_server = "chef.example.com";
 $fitb_server = "205.234.15.34/FITB/";
 $ganglia_server = "ganglia.example.com";
 $ganglia_server_dev = "ganglia.dev.example.com";
-$graphite_server = "graphite.ticketfly.com";
+$graphite_server = "graphite.tfly-tools.com";
 $graphite_server_dev = "graphite.dev.example.com";
 $splunk_server = "splunk.example.com";
 

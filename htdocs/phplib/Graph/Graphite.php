@@ -234,7 +234,7 @@ class Graph_Graphite {
             }
         }
 
-        $url = 'http://' . $this->host . '/render?'
+        $url = 'https://' . $this->host . '/render?'
                 . http_build_query($p)
                 . '&' . implode('&', $targets)
                 . '&colorList=' . implode(',', $colors);
