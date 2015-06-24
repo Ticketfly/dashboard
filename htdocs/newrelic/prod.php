@@ -1,12 +1,12 @@
 <?php
 
-/** NewRelic's graphs cannot be constructed progamatically. Each graph you want 
- * added here, has to manually be made "public" and then the URL for the graph 
- * added below. Not only that, but you need to get a separate URL for each time 
+/** NewRelic's graphs cannot be constructed progamatically. Each graph you want
+ * added here, has to manually be made "public" and then the URL for the graph
+ * added below. Not only that, but you need to get a separate URL for each time
  * frame you want to make visible. Excellent!
- * And if that wasn't enough, you must general a graph URL for each of the 
- * following time frames which the dashboard uses. If you don't, your users will 
- * see the "1 hour" graph, or a broken graph, when choosing a timeframe for 
+ * And if that wasn't enough, you must general a graph URL for each of the
+ * following time frames which the dashboard uses. If you don't, your users will
+ * see the "1 hour" graph, or a broken graph, when choosing a timeframe for
  * which graphs don't exist:
  *     '30m' => '30 mins' yes there is a but with it saying 30 months on it
  *     '1h' => '1 hour',
@@ -19,8 +19,8 @@
  *     '1w' => '1 week',
  *     '1m' => '1 month',
  *     '2m' => '2 months'
- * Finally, NewRelic's graph time ranges don't match up exactly with our 
- * dashboard times. For times like "4h", you will have to pick if you want to 
+ * Finally, NewRelic's graph time ranges don't match up exactly with our
+ * dashboard times. For times like "4h", you will have to pick if you want to
  * display NewRelic's 3 hour or 6 hour view.
  */
 
@@ -64,32 +64,32 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/3x76YrGanja'),
-        ),        
+        ),
         //BKS
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/6zoZozONyY8'),
         ),
-        //DVA
+        //BKS
         array(
             'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7ir1XZIb5RN'),
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/cx9DKnoQWIC'),
         ),
         //Elastic Search
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/jHjWgzNHXe3'),
-        ),                        
-        //LNG
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/imTU6K0Q9WP'),
         ),
         //PLE
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/bYUJB2T0Yom'),
-        ),        
+        ),
+        //PUL
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/7zYg8EWcq3p'),
+        ),
         //PUR
         array(
             'type' => 'newrelic',
@@ -109,11 +109,26 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/365P6r8diz'),
-        ),                        
+        ),
         //WPMU
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '30m', 'url' => 'https://rpm.newrelic.com/public/charts/jP7A7ovTtdb'),
+        ),
+        //DVA01
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/3KEaDjE14Gq'),
+        ),
+        //DVA02
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/3uj8NUTs6hx'),
+        ),
+        //DVA03
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/1Peu1gwG7nI'),
         ),
         //API
         array(
@@ -134,32 +149,32 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/5uh9FB63sJP'),
-        ),        
+        ),
         //BKS
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/kEukcS7V6Sw'),
         ),
-        //DVA
+        //BKS
         array(
             'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/clEqNZzO8Rs'),
-        ),           
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/SSWoTwhMWc'),
+        ),
         //Elastic Search
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/1UAHpLprb7J'),
-        ),                                
-        //LNG
-        array(
-            'type' => 'newrelic',
-            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/z8SxdRvbBD'),
         ),
         //PLE
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/eDETfYFdalM'),
-        ),                
+        ),
+        //PUL
+        array(
+            'type' => 'newrelic',
+            'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/3X6h3wPvJPC'),
+        ),
         //PUR
         array(
             'type' => 'newrelic',
@@ -179,7 +194,7 @@ $graphs = array(
         array(
             'type' => 'newrelic',
             'metric' => array('time' => '1h', 'url' => 'https://rpm.newrelic.com/public/charts/3vd1N7rknQo'),
-        ),                   
+        ),
         //WPMU
         array(
             'type' => 'newrelic',
